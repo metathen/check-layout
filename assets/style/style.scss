@@ -312,6 +312,12 @@ body {
         grid-template-columns: .5fr .5fr;
         margin-top: 40px;
         & .num {color: var(--blue);}
+        & img {
+            max-height: 174px;
+        }
+    }
+    &-slide {
+        &__box {height: 100%;}
     }
     & li {
         & .access-slide__box {
@@ -490,6 +496,7 @@ body {
     &-slide {
         gap: 47px;
         opacity: 0 !important;
+        display: flex;
         &.swiper-slide-active {opacity: 1 !important;}
         & p {
             font-size: 35px;

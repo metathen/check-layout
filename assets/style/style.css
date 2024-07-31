@@ -352,6 +352,12 @@ body.stuck {
 .access-items .num {
   color: var(--blue);
 }
+.access-items img {
+  max-height: 174px;
+}
+.access-slide__box {
+  height: 100%;
+}
 .access li .access-slide__box {
   background-color: var(--white);
   padding: 25px 13px 13px 25px;
@@ -527,6 +533,7 @@ body.stuck {
 .last-slide {
   gap: 47px;
   opacity: 0 !important;
+  display: flex;
 }
 .last-slide.swiper-slide-active {
   opacity: 1 !important;

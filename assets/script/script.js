@@ -57,6 +57,10 @@ mobileSwiper(accessSwipe, accessWrapper, accessSlide);
 
 window.addEventListener('resize', () => mobileSwiper(accessSwipe, accessWrapper, accessSlide))
 
+window.addEventListener('play', (e) => {
+    console.log(e);
+})
+
 //glob click
 window.addEventListener(pickclick, (e) => {
     if(e.target.closest('.mobile-menu a')) {

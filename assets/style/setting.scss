@@ -176,4 +176,28 @@ button {cursor: pointer;}
 .uppercase {
     text-transform: uppercase;
 }
+#video-box {
+    position: relative;
+    overflow: hidden;
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.145);
+        transition: all .6s var(--t-1);
+    }
+    &.active {
+        &::before, &::after {display: none;}
+    }
+}
+video {
+    min-width: 100%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
 //el-style end
