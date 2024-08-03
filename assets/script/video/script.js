@@ -1,4 +1,4 @@
-let smartLocDoc=navigator.userAgent, pickclickLoc=(smartLocDoc.match(/iPad/i) || smartLoc.match(/iPhone/)) ? "touchstart" : "click";
+let smartLocDoc=navigator.userAgent, pickclickLoc=(smartLocDoc.match(/iPad/i) || smartLocDoc.match(/iPhone/)) ? "touchstart" : "click";
 
 const videoList = document.querySelectorAll('#video-box');
 

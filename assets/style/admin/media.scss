@@ -1,197 +1,96 @@
 @media(max-width: 500px) {
-    .main {
-        &-content {
-            flex-direction: column;
-            gap: 20px;
-        }
-    }
-    
-    .panel {
-        max-width: 100%;
-        &-box {
-            padding: 41px 25px;
-        }
-        &-img {
-            width: 108px;
-            height: 108px;
-            margin-bottom: 33px;
-        }
-        &-name {
-            font-size: 25px;
-            line-height: 22px;
-        }
-        &-mail {
-            font-size: 16px;
-            line-height: 21px;
-            margin-block: 8px 49px;
-        }
-        & ul {
-            & li {
-                font-size: 25px;
-                line-height: 21px;
-                & a {padding-block: 28px;}
-                &:last-child {
-                    & .panel-bg {
-                        height: 97px;
-                        width: 25px;
-                        right: -25px;
-                        &::after {
-                            content: '';
-                            display: block;
-                            border-radius: 0 25px 0 0; bottom: -1.6px;
-                        }
-                        &::before {width: 26px; height: 16px;top: -1px; right: 0;}
-                    }
-                }
-            }
-        }
-        &-bg {
-            height: 97px;
-            width: 25px;
-            right: -25px;
-            &::before, &::after {
-                display: block;
-                width: 26px;
-                height: 16px;
-            }
-            &::before {top: -1.5px; right: .4px;border-radius: 0 0 25px 0;}
-            &::after {border-radius: 0 25px 0 0; bottom: -1.3px;}
-        }
-    }
-    
     .admin {
-        &-list {
-            margin-top: 20px;
-            grid-template-columns: 1fr;
-            grid-auto-rows: 200px;
-            gap: 20px;
-        }
-        &-head {
-            font-size: 20px;
-            line-height: 45px;
-            padding-block: 13px;
-        }
-    }
-    
-    .stat {
-        grid-template-columns: 1fr;
-        gap: 20px;
-        &-ava {
-            max-width: 262px;
+        &-box {
             width: 100%;
-            margin: 0 auto;
-            &__block {
-                height: 192px;
-                max-width: 100%;
-                margin-bottom: 15px;
-                border-radius: 21px;
-            }
-        }
-        &-info {
-            border-radius: 13px;
-            &__head {
-                margin-bottom: 18px;
-            }
-            &__title {
-                font-size: 18px;
-                line-height: 12px;
-            }
-            &__val {
-                font-size: 13px;
-                line-height: 12px;
-            }
-            & ul {
-                font-size: 13px;
-                &:not(:last-child) {margin-bottom: 22px;}
-            }
-            & ul li {
-                &:not(:last-child) {margin-bottom: 13px;}
-            }
-        }
-        &-tab {
-            &:nth-child(2) {margin-top: 20px; font-size: 18px;}
-            padding: 14px 18px;
-            border-radius: 18px;
-            font-size: 22px;
-        }
-        &-add {
-            margin-top: 20px;
-            height: 176px;
-        }
-        &-num {
-            font-size: 22px;
-            margin-top: 7px;
-        }
-    }
-
-    .sub {
-        &-list {
-            grid-template-columns: 1fr;
-            gap: 20px;
-            grid-auto-rows: 71px;
-            & li:nth-child(2n+1) {background-color: var(--blue);}
-            & li:nth-child(2n) {background-color: var(--theme);}
-        }
-    }
-
-    .user {
-        &-list {
-            display: flex;
-            gap: 0;
-            & li {
-                height: 199px;
-            }
-        }
-        &-item {
-            margin-inline: 17px;
-            font-size: 19px;
-            padding-inline: 20px;
+            max-width: 100%;
+            min-height: 490px;
+            max-height: 490px;
         }
         &-nav {
-            display: block;
-        }
-        &-prev, &-next {
-            border-radius: var(--r-lg);
-            background-color: var(--white);
-            border: 1px solid var(--blue);
-            box-shadow: 0 0 0 7px var(--white);
-            width: 35px;
-            height: 35px;
-            display: grid;
-            place-items: center; 
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            z-index: 10;
-            &::before {content: url('../../image/access/ArrowBlue.svg'); height: 20px;}
-            &:hover {
-                background-color: var(--theme);
-                border-color: var(--theme);
-                &::before {content: url('../../image/access/ArrowLight2.svg');}
-            }
-            &.swiper-button-disabled {
-                background-color: var(--white);
-                border-color: var(--blue-50);
-                &::before {content: url('../../image/access/ArrowBlue.svg'); opacity: .5;}
-            }
-        }
-        &-next {
-            right: 0;
-            &::before {transform: rotate(180deg);}
-        }
-    }
-    
-    .add {
-        &-item {
-            border-radius: 27px;
-            &.sm {
-                &::before {
-                    width: 62px;
-                    height: 62px;
-                    font-size: 40px;
-                    border-radius: 7px;
+            max-width: 62px;
+            min-width: 62px;
+            gap: 72px;
+            & ul {
+                max-width: 100%;
+                width: 100%;
+                & li {
+                    a {
+                        padding-inline: 18px 16px;
+                        & img {width: 80% !important;}
+                    }
+                    &:nth-child(2) {& img {width: 100% !important;}}
+                    &:nth-child(4) {& img {width: 60% !important;}}
                 }
             }
         }
+        &-content {padding-block: 20px 27px; border-radius: 15px; overflow-y: auto; overflow-x: hidden;}
+        &-container {max-width: 100%; margin-inline: 0;
+            padding-inline: 10px;
+            width: 100%;
+        }
+        &-logo {
+            & img {width: 77px;}
+        }
+        &-ava {
+            width: 20px;
+            height: 20px;
+            & ~ p {
+                padding: 4.5px 8.5px 4.5px 12.5px;
+                margin-left: -4px;
+            }
+        }
+        &-user {font-size: 5px;}
+        &-block {margin-top: 13px; overflow-y: auto;}
+        &-title {margin-bottom: 32px;}
+        & .main {
+            &-content {
+                grid-template-columns: .1fr 1fr;
+                align-items: flex-start;
+            }
+        }
+    }
+    .course {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 100px;
+        & li {border-radius: 10px;}
+    }
+    .edit {
+        & li {&:not(:last-child) {margin-bottom: 26px;}}
+        & a {padding-inline: 10px;}
+        &-page {
+            padding: 8px 10px;
+            & span {
+                font-size: 10px;
+            }
+            & input {
+                &, &::placeholder {font-size: 15px;}
+            }
+        }
+    }
+    .stat {
+        grid-template-columns: 1fr;
+        gap: 21px;
+        &-info {
+            padding: 12px 10px 12px;
+            margin-bottom: 21px;
+            font-size: 12px;
+            & .title {font-size: 13px;}
+        }
+        &-tab {
+            flex-direction: column;
+            padding-inline: 0;
+            align-items: center;
+            gap: 15px;
+        }
+        &-img {display: none;}
+    }
+    .calendar {
+        border-radius: 10px;
+        padding: 10px;
+        &-weeks {gap: 0;}
+        &-day {row-gap: 15px;}
+    }
+    .r {
+        &-std {border-radius: 10px;}
     }
 }

@@ -117,7 +117,7 @@ body.stuck {
 }
 
 .video {
-  background-image: url("../image/bg-section-2.png");
+  background-image: url("../image/section-2-bg.png");
   background-size: 100% 100%;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -152,7 +152,7 @@ body.stuck {
 
 .train {
   padding-block: 40px 85px;
-  background-image: url("../image/bg-section-3.png");
+  background-image: url("../image/section-3-bg.png");
   background-size: 100% 50%;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -268,6 +268,9 @@ body.stuck {
 .info ul li:not(:last-child) {
   margin-bottom: 30px;
 }
+.info ul li:nth-child(2n+1) {
+  background-color: var(--blue);
+}
 .info ul li:nth-child(2n+1)::after {
   content: url("../image/info/way/info-1.svg");
   position: absolute;
@@ -277,6 +280,8 @@ body.stuck {
 }
 .info ul li:nth-child(2n) {
   margin-inline: auto 0;
+  background-color: var(--blue-3);
+  color: var(--white) !important;
 }
 .info ul li:nth-child(2n)::before {
   content: "";
@@ -321,18 +326,18 @@ body.stuck {
 .info-item__title {
   font-size: var(--fs-md);
   line-height: 225%;
-  color: var(--blue);
+  color: var(--white);
   font-weight: 500;
   margin-bottom: 20px;
 }
 .info-item__text {
   font-size: var(--fs-tn-1);
   line-height: 166%;
-  color: var(--black-85);
+  color: var(--white);
 }
 
 .access {
-  background-image: url("../image/access/access-bg.png");
+  background-image: url("../image/access/access-bg-2.png");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
@@ -456,7 +461,7 @@ body.stuck {
 }
 
 .last {
-  background-image: url("../image/last/last-bg.png");
+  background-image: url("../image/last/last-bg-2.png");
   background-position: bottom;
   background-size: 100% 47%;
   background-repeat: no-repeat;
@@ -520,6 +525,8 @@ body.stuck {
   padding: 20px 45px 20px 55px;
   border-radius: var(--r-sm-2);
   padding-bottom: 109px;
+  color: var(--white);
+  background-color: var(--blue);
 }
 .last-swiper .swiper-pagination {
   bottom: 20px;
@@ -527,7 +534,7 @@ body.stuck {
 .last-swiper .swiper-pagination-bullet {
   width: 25px;
   height: 5px;
-  background-color: var(--black);
+  background-color: var(--white);
   border-radius: 100px;
 }
 .last-slide {
@@ -635,7 +642,7 @@ body.stuck {
 }
 
 .feed {
-  background-image: url("../image/feed/feed-bg.png");
+  background-image: url("../image/feed/feed-bg-2.png");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;

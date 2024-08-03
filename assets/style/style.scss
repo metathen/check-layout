@@ -112,7 +112,7 @@ body {
 
 //Video
 .video {
-    background-image: url('../image/bg-section-2.png');
+    background-image: url('../image/section-2-bg.png');
     background-size: 100% 100%;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -147,7 +147,7 @@ body {
 //Train
 .train {
     padding-block: 40px 85px;
-    background-image: url('../image/bg-section-3.png');
+    background-image: url('../image/section-3-bg.png');
     background-size: 100% 50%;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -249,6 +249,7 @@ body {
             position: relative;
             &:not(:last-child) {margin-bottom: 30px;}
             &:nth-child(2n+1) {       
+                background-color: var(--blue);
                 &::after {
                     content: url('../image/info/way/info-1.svg');
                     position: absolute;
@@ -259,6 +260,8 @@ body {
             }
             &:nth-child(2n) {
                 margin-inline: auto 0;
+                background-color: var(--blue-3);
+                color: var(--white) !important;
                 &::before {
                     content: '';
                     position: absolute;
@@ -281,14 +284,14 @@ body {
         &__title {
             font-size: var(--fs-md);
             line-height: 225%;
-            color: var(--blue);
+            color: var(--white);
             font-weight: 500;
             margin-bottom: 20px;
         }
         &__text {
             font-size: var(--fs-tn-1);
             line-height: 166%;
-            color: var(--black-85);
+            color: var(--white);
         }
     }
 }
@@ -296,7 +299,7 @@ body {
 
 //Access
 .access {
-    background-image: url('../image/access/access-bg.png');
+    background-image: url('../image/access/access-bg-2.png');
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
@@ -420,7 +423,7 @@ body {
 
 //Last
 .last {
-    background-image: url('../image/last/last-bg.png');
+    background-image: url('../image/last/last-bg-2.png');
     background-position: bottom;
     background-size: 100% 47%;
     background-repeat: no-repeat;
@@ -481,13 +484,15 @@ body {
         padding: 20px 45px 20px 55px;
         border-radius: var(--r-sm-2);
         padding-bottom: 109px;
+        color: var(--white);
+        background-color: var(--blue);
         & .swiper {
             &-pagination {
                 bottom: 20px;
                 &-bullet {
                     width: 25px;
                     height: 5px;
-                    background-color: var(--black);
+                    background-color: var(--white);
                     border-radius: 100px;
                 }
             }
@@ -595,7 +600,7 @@ body {
 
 //Feed
 .feed {
-    background-image: url('../image/feed/feed-bg.png');
+    background-image: url('../image/feed/feed-bg-2.png');
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
