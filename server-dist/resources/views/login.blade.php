@@ -16,8 +16,8 @@
                 <div class="auth-box box text-center c-white">
         
                     <p class="auth-title form-title">Вход</p>
-                    @csrf
                     <form method="post" class="auth-form" action="{{ route('user.login') }}"> 
+                        @csrf
                         <ul>
                             <li>
                                 <p>E-mail</p>

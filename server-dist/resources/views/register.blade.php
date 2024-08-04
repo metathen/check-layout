@@ -16,8 +16,8 @@
 
             <div class="reg c-white">
                 <p class="reg-title form-title">Создать аккаунт</p>
-                @csrf
                 <form method="post" action="{{ route('user.register') }}">
+                    @csrf
                     <ul class="reg-body form-body">
                         <li>
                             <p>Имя</p>
@@ -25,7 +25,7 @@
                         </li>
                         <li>
                             <p>Почта</p>
-                            <input type="email" name="usermail" id="usermail" placeholder="Почта" required autocomplete="off">
+                            <input type="email" name="email" id="email" placeholder="Почта" required autocomplete="off">
                         </li>
                         <li>
                             <p>Телефон</p>
@@ -33,7 +33,7 @@
                         </li>
                         <li>
                             <p>Пароль</p>
-                            <input type="password" name="userpassword" id="userpassword" placeholder="Пароль" required autocomplete="off">
+                            <input type="password" name="password" id="password" placeholder="Пароль" required autocomplete="off">
                         </li>
                     </ul>
                     <div class="form-btn reg-btn">
