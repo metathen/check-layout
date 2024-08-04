@@ -31,7 +31,7 @@ Route::name('user.')->group(function() {
         if(Auth::check()) {
             return redirect(route(name: 'user.stats'));
         }
-        return view(name(name: 'register'));
+        return view(view: 'register');
     })->name(name: 'register');
 
     //Route::post('/register', []);
