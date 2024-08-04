@@ -16,23 +16,22 @@ use Illuminate\Support\Facades\Route;
 Route::view('/', 'index');
 
 Route::name('user.')->group(function() {
-    Route::view('/stats', 'stats')->middleware(middleware: 'auth')->name(name: 'stats');
+    Route::view('/stats', 'stats')->middleware('auth')->name('stats');
     Route::get('/login', function() {
         if(Auth::check()) {
-            return redirect(route(name: 'user.stats'));
+            return redirect(route('user.stats'));
         }
-        return view(view: 'login');
-    })->name(name: 'login');
+        return view('login');
+    })->name('login');
 
     //Route::post('/login', []);
 
-    //Route::get('/logout', [])->name(name: 'logout');
     Route::get('/register', function() {
         if(Auth::check()) {
-            return redirect(route(name: 'user.stats'));
+            return redirect(route('user.stats'));
         }
-        return view(view: 'register');
-    })->name(name: 'register');
+        return view('register');
+    })->name('register');
 
-    //Route::post('/register', []);
+    Route::post('/register', [\App\Http\Controllers\RegisterController::class, 'save']);
 });
