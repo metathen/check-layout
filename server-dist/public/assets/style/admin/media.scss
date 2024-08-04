@@ -1,0 +1,96 @@
+@media(max-width: 500px) {
+    .admin {
+        &-box {
+            width: 100%;
+            max-width: 100%;
+            min-height: 490px;
+            max-height: 490px;
+        }
+        &-nav {
+            max-width: 62px;
+            min-width: 62px;
+            gap: 72px;
+            & ul {
+                max-width: 100%;
+                width: 100%;
+                & li {
+                    a {
+                        padding-inline: 18px 16px;
+                        & img {width: 80% !important;}
+                    }
+                    &:nth-child(2) {& img {width: 100% !important;}}
+                    &:nth-child(4) {& img {width: 60% !important;}}
+                }
+            }
+        }
+        &-content {padding-block: 20px 27px; border-radius: 15px; overflow-y: auto; overflow-x: hidden;}
+        &-container {max-width: 100%; margin-inline: 0;
+            padding-inline: 10px;
+            width: 100%;
+        }
+        &-logo {
+            & img {width: 77px;}
+        }
+        &-ava {
+            width: 20px;
+            height: 20px;
+            & ~ p {
+                padding: 4.5px 8.5px 4.5px 12.5px;
+                margin-left: -4px;
+            }
+        }
+        &-user {font-size: 5px;}
+        &-block {margin-top: 13px; overflow-y: auto;}
+        &-title {margin-bottom: 32px;}
+        & .main {
+            &-content {
+                grid-template-columns: .1fr 1fr;
+                align-items: flex-start;
+            }
+        }
+    }
+    .course {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 100px;
+        & li {border-radius: 10px;}
+    }
+    .edit {
+        & li {&:not(:last-child) {margin-bottom: 26px;}}
+        & a {padding-inline: 10px;}
+        &-page {
+            padding: 8px 10px;
+            & span {
+                font-size: 10px;
+            }
+            & input {
+                &, &::placeholder {font-size: 15px;}
+            }
+        }
+    }
+    .stat {
+        grid-template-columns: 1fr;
+        gap: 21px;
+        &-info {
+            padding: 12px 10px 12px;
+            margin-bottom: 21px;
+            font-size: 12px;
+            & .title {font-size: 13px;}
+        }
+        &-tab {
+            flex-direction: column;
+            padding-inline: 0;
+            align-items: center;
+            gap: 15px;
+        }
+        &-img {display: none;}
+    }
+    .calendar {
+        border-radius: 10px;
+        padding: 10px;
+        &-weeks {gap: 0;}
+        &-day {row-gap: 15px;}
+    }
+    .r {
+        &-std {border-radius: 10px;}
+    }
+}
