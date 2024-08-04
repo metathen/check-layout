@@ -26,6 +26,11 @@ Route::name('user.')->group(function() {
 
     //Route::post('/login', []);
 
+    Route::get('/logout', function() {
+        Auth::logout();
+        return redirect('/login');
+    })->name('logout');
+    
     Route::get('/register', function() {
         if(Auth::check()) {
             return redirect(route('user.stats'));
