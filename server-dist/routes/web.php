@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::view('/', 'index');
 
 Route::name('user.')->group(function() {
-    Route::view('/stats', 'stats')->middleware('auth')->name('stats');
+    Route::view('/stats', 'pages.stats')->middleware('auth')->name('stats');
     Route::get('/login', function() {
         if(Auth::check()) {
             return redirect(route('user.stats'));
@@ -24,7 +24,7 @@ Route::name('user.')->group(function() {
         return view('login');
     })->name('login');
 
-    //Route::post('/login', []);
+    Route::post('/login', [\App\Http\Controllers\LoginController::class, 'login']);
 
     Route::get('/logout', function() {
         Auth::logout();
