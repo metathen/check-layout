@@ -110,18 +110,18 @@
     gap: 40px;
     &-info {
         width: 100%;
-        padding: 20px 20px 17px 20px;
+        padding: 15px 20px 17px 20px;
         line-height: 16px;
         & li {
             display: flex;
             justify-content: space-between;
-            &:first-child {margin-bottom: 20px;}
+            &:first-child {margin-bottom: 15px;}
             &:nth-child(3) {
                 margin-block: 15px 25px;
             }
             &:not(:first-child) {color: var(--white-50);}
         }
-        & .title {font-size: 20px;}
+        & .title {font-size: 15px;}
     }
     &-img {
         display: flex;
@@ -131,7 +131,7 @@
             border-radius: 15px;
             background-color: var(--gray-4);
             width: 50%;
-            height: 110px;
+            height: 90px;
             & img {object-fit: cover;}
         }
     }
@@ -139,10 +139,10 @@
         padding-inline: 22px;
         display: flex;
         justify-content: space-around;
-        &__title {font-size: 10px; margin-bottom: 10px;}
+        &__title {font-size: 10px; margin-bottom: 5px;}
         &__value {font-size: 20px;}
         & li {
-            padding-block: 20px;
+            padding-block: 10px;
             border-radius: 15px;
             text-align: center;
             width: 140px;
